@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Small helpers / defaults */
+html,
+body {
+  height: 100%;
+}
+
+/* You can add project-specific customizations below */

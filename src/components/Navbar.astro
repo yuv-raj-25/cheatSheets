@@ -1,0 +1,18 @@
+---
+import DarkToggle from "./DarkToggle.astro";
+---
+
+<nav
+  class="flex sticky justify-between items-center top-0 h-16 bg-inherit px-2 md:px-32 w-full z-10"
+>
+  <a
+    class="px-4 text-xl flex justify-center content-center text-gradient gap-2"
+    href="/"
+  >
+    <img class="h-8 w-8" src="/android-chrome-512x512.png" alt="logo" />
+
+    <span class="hidden md:block">Cheatsheets</span>
+  </a>
+
+  <DarkToggle />
+</nav>

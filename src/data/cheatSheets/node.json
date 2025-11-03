@@ -1,0 +1,15 @@
+{
+  "title": "Node.js Cheatsheet",
+  "description": "Core Node.js APIs and patterns (stub).",
+  "sections": [
+    {
+      "title": "Overview",
+      "content": [
+        {
+          "type": "text",
+          "text": "Node.js is a JavaScript runtime built on Chrome's V8 engine for building server-side applications."
+        }
+      ]
+    }
+  ]
+}

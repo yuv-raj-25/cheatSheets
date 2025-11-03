@@ -1,0 +1,61 @@
+{
+  "title": "React Cheatsheet",
+  "description": "Overview of React, components, and core hooks with short examples.",
+  "sections": [
+    {
+      "title": "Overview",
+      "content": [
+        {
+          "type": "text",
+          "text": "React is a library for building user interfaces using components and declarative rendering."
+        },
+        {
+          "type": "text",
+          "text": "Use function components and Hooks for modern React development."
+        }
+      ]
+    },
+    {
+      "title": "useState",
+      "content": [
+        {
+          "type": "text",
+          "text": "Add local state to function components using useState."
+        },
+        {
+          "type": "code",
+          "code": "const [count, setCount] = useState(0);\nsetCount(c => c + 1);",
+          "lang": "jsx"
+        }
+      ]
+    },
+    {
+      "title": "useEffect",
+      "content": [
+        {
+          "type": "text",
+          "text": "Run side effects after render with useEffect. Provide dependencies to control when it runs."
+        },
+        {
+          "type": "code",
+          "code": "useEffect(() => {\n  fetch('/api').then(r => r.json()).then(setData);\n}, []);",
+          "lang": "jsx"
+        }
+      ]
+    },
+    {
+      "title": "Custom Hooks",
+      "content": [
+        {
+          "type": "text",
+          "text": "Extract reusable logic into custom hooks whose names start with 'use'."
+        },
+        {
+          "type": "code",
+          "code": "function useToggle(initial = false) {\n  const [on, setOn] = useState(initial);\n  const toggle = () => setOn(o => !o);\n  return { on, toggle };\n}",
+          "lang": "ts"
+        }
+      ]
+    }
+  ]
+}
